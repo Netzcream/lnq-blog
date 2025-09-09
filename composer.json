@@ -1,0 +1,22 @@
+{
+    "name": "lnq/blog",
+    "description": "Paquete Blog LNQ",
+    "version": "0.1.0",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Lnq\\Blog\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.3",
+        "illuminate/support": "^12.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lnq\\Blog\\BlogServiceProvider"
+            ]
+        }
+    }
+}
