@@ -34,6 +34,18 @@ php artisan vendor:publish --tag=blog-views
 php artisan blog:sync-permissions
 
 
+
+php artisan vendor:publish --provider="Lnq\Blog\BlogServiceProvider" --tag=blog-config
+php artisan vendor:publish --provider="Lnq\Blog\BlogServiceProvider" --tag=blog-views
+php artisan vendor:publish --provider="Lnq\Blog\BlogServiceProvider" --tag=blog-assets
+
 @can('blog.view')
   <a href="{{ route('blog.admin.index') }}">Blog</a>
 @endcan
+
+cd packages/lnq/blog
+git add .
+git commit -m "lo que cambiaste"
+git push origin main
+git tag v0.1.1
+git push --tags

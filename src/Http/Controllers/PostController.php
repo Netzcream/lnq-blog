@@ -15,7 +15,7 @@ class PostController extends Controller
             ->where('published_at', '<=', now())
             ->latest('published_at')
             ->paginate(12);
-
+//
         return view('blog::public.index', compact('posts'));
     }
 
