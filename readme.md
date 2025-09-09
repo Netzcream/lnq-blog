@@ -24,11 +24,11 @@ públicas + dashboard, con layout básico y sobreescribibles. OK
 8 Hacer el paquete autoconcluyente
 incluir scripts/librerías propias (ej: WYSIWYG), sin depender del main.
 
-Publicar assets y vistas
+9 Publicar assets y vistas
 para que la app pueda sobreescribir y adaptarlos (layouts, estilos, etc.).
 
 
-
+{            "type": "path",            "url": "packages/lnq/blog"        }
 composer require luniqo/blog:* 
 php artisan vendor:publish --tag=blog-config
 php artisan migrate
