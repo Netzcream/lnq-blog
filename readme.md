@@ -1,5 +1,3 @@
-Genial 👌, acá va el resumen en pasos:
-
 1 Crear estructura del paquete Blog
 (packages/Blog con su composer.json, src/, routes/, views/, etc.). ok
 
