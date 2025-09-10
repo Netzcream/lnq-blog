@@ -27,6 +27,8 @@ para que la app pueda sobreescribir y adaptarlos (layouts, estilos, etc.).
 
 
 {            "type": "path",            "url": "packages/lnq/blog"        }
+        
+{ "type": "vcs", "url": "git@github.com:netzcream/lnq-blog.git" }
 composer require luniqo/blog:* 
 php artisan vendor:publish --tag=blog-config
 php artisan migrate
